@@ -1,4 +1,4 @@
-const countries = [
+const collges = [
     {name: 'Galgotias College'},
     {name: 'Sharda University'},
     {name: 'Argentina'},
@@ -11,7 +11,7 @@ const countries = [
   searchInput.addEventListener('keyup', function() {
     const input = searchInput.value;
     suggestionsPanel.innerHTML = '';
-    const suggestions = countries.filter(function(country) {
+    const suggestions = colleges.filter(function(collges) {
       return country.name.toLowerCase().startsWith(input);
     });
     suggestions.forEach(function(suggested) {
@@ -20,8 +20,10 @@ const countries = [
       suggestionsPanel.appendChild(div);
     });
     if (input === '') {
-      suggestionsPanel.innerHTML = '';  
+      suggestionsPanel.innerHTML = '';
+
     }
+    
   })
 
   
