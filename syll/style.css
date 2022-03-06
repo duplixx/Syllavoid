@@ -1,0 +1,55 @@
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1920 - 320));
+}
+
+body, input {
+	color: #171717;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	height: 100vh;
+}
+.container{
+    background-image: url(https://i.pinimg.com/originals/9d/59/fd/9d59fd984b4b15bae2902bd21f42e568.jpg);  /*https://vignette.wikia.nocookie.net/powerlisting/images/e/e1/Void_Magic.jpg/revision/latest?cb=20141202043525 */
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 95vh;
+}
+.suggested {
+	display:flex;
+	flex-direction: column;
+}
+.suggested > a :hover {
+	color:black;
+}
+
+
+
+
+  @media only screen and (max-width: 600px) {
+	body {
+	  background-color: lightblue;
+	}
+	.container{
+		background-image: url(https://i.pinimg.com/originals/9d/59/fd/9d59fd984b4b15bae2902bd21f42e568.jpg);  /*https://vignette.wikia.nocookie.net/powerlisting/images/e/e1/Void_Magic.jpg/revision/latest?cb=20141202043525 */
+		background-repeat: no-repeat;
+		background-size:cover;
+		height: 80vh;
+	}
+	
+	.suggested :hover{
+		text-shadow: 4em;
+		font-size: 2em;
+		
+	}
+	
+
+  }
