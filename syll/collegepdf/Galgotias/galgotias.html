@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.0.943/build/pdf.min.js"></script> -->
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>PDF Viewer</title>
+</head>
+
+<body class=" bg-gradient-to-r from-cyan-500 to-red-200 p-5">
+  <nav class="flex justify-between px-10 mt-5 text-2xl font-bold mouse-pointer  ">
+    <div class="font-bold flex space-evenly">
+      <h1 class="text-5xl ">Sylla<span class="text-red-600">void</span></h1>
+      <div class="block "><span>pdfview</span></div>
+    </div>
+
+  </nav>
+  <div class=" text-center  font-bold  text-white text-xl md:text-5xl ">
+    <h1>Galgotia University Pdf</h1>
+  </div>
+
+  <div class="container mt-10">
+    <hr>
+    <center class=" mt-5 ">
+      <canvas id="pdfrender"
+        class="rounded-2xl border-8 shadow-black shadow-2xl  md:w-[500px] md:h-[600px] w-[400px] h-[620px]"></canvas>
+
+    </center>
+    <div class=" mt-5 flex align-center justify-center space-x-3 ">
+      <button class="" id="prev-page">
+
+        <img class="shadow-2xl shadow-black rounded-full active:bg-gray-300"
+          src="https://img.icons8.com/glyph-neue/64/000000/circled-chevron-left.png" />
+      </button>
+      <button class="btn" id="next-page">
+        <img class="shadow-2xl shadow-black rounded-full active:bg-gray-300"
+          src="https://img.icons8.com/glyph-neue/64/000000/circled-chevron-right.png" alt="screen" />
+      </button>
+      <span class="page-info mt-4 text-l">
+        Page <span id="page-num"></span> of <span id="page-count"></span>
+      </span>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+  <!-- <script> 
+  
+    pdfjsLib.getDocument('./Galgotias.pdf').then(doc=>{
+          console.log("this has "+ doc._pdfInfo.numPages+"  pages");
+            doc.getPage(1).then(page=>{
+            var myCanvas = document.getElementById("pdfrender");
+            var Context =myCanvas.getContext("2d");
+            var viewport =page.getViewport(1);
+            myCanvas.width = viewport.width;
+            myCanvas.height = viewport.height;
+            page.render({
+              canvasContext:Context,
+              viewport:viewport
+      
+            });
+          });
+      
+
+  });
+  </script> -->
+
+</body>
+
+</html>
