@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/91052885a4.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
@@ -32,7 +35,7 @@
             Sylla<span class="text-red-600 void">Void</span>
           </h1>
         </li>
-        <li><a href="signin.html">Sign in</a></li>
+        <li><button id="open" >SIGN IN</button></li>
       </ul>
     </nav>
     <section class="search container">
@@ -180,15 +183,74 @@
       </div>
     </section>
     <hr />
-    <!-- <footer>
-        <p>&copy;copyright 2022 </p>
-        <ul class="link-cont">
-          <img src="images/facebookVector.png" alt="" class="link-icons"></li>
-          <img src="images/gmail.png" alt="" class="link-icons"></li>
-          <img src="images/github.webp" alt="" class="link-icons"></li>
-        </ul>
-        <h3>Made with love by team HackerJacks </h3>
-    </footer> -->
+    <footer>
+      <div class="row">
+          <div class="col">
+            <h1 class="sylla">
+              Sylla<span class="text-red-600 void">Void</span>
+            </h1>
+              <p class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo reprehenderit perferendis ea
+                  consectetur eum, suscipit odio. Modi nisi quis quos, neque beatae libero amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laborum obcaecati ipsam consectetur, similique vero harum deserunt vitae voluptatibus tempore id omnis iusto, laboriosam eos ut! Quasi ea quae perferendis!</p>
+          </div>
+          <div class="col">
+              <h3>Office <div class="underline"><span></span></div></h3>
+              <p>XYZ Road</p>
+              <p>ABCDE, Noida</p>
+              <p>Delhi, PIN 231010, India</p>
+              <p class="email">xyz123@gmail.com</p>
+              <h4>+91 - 0123456789</h4>
+          </div>
+          <div class="col">
+              <h3>Contact <div class="underline"><span></span></div></h3>
+              <form action="">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" placeholder="Enter Your Email-id">
+                  <button><i class="fa-solid fa-arrow-right"></i></button> 
+              </form>
+              <div class="social">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-instagram"></i>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <p class="end" >Made with <i class="fa-solid fa-heart"></i> by team.</p>
+  </footer>
+  
+    <div class="sign-up" id="modal">
+        <div class="header">
+            <h1>Welcome</h1>
+            <button id="closed" class="close-button">&times;</button>
+        </div>
+        <form>
+            <input type="email" class="input" placeholder="Enter your Email-Id">
+            <input type="password" class="input" placeholder="Enter your Password">
+        </form>
+        <p class="remem"> <span><input type="checkbox"></span> Remember Me </p>
+        <button class="btn1">LOGIN</button>
+        <p class="forgot">Forgot Password?</p>
+        <hr>
+        <p class="or">OR</p>
+        <p>Need an account ? <a href="sign.html">SIGN UP</a></p>
+    </div>
+    <div id="overlay"></div>
+    <script>
+        const open = document.getElementById('open')
+        const container = document.getElementById('modal')
+        const close = document.getElementById('closed')
+        const overlay = document.getElementById('overlay')
+
+        open.addEventListener('click', () => {
+            container.classList.add('active');
+            overlay.classList.add('active');
+        });
+        close.addEventListener('click', () => {
+            container.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
     <script src="js/typewriter.js"></script>
     <script src="js/search.js"></script>
     <script>
@@ -252,6 +314,7 @@
         }
       }
       window.addEventListener("scroll", rerevealSide);
+      
     </script>
   </body>
 </html>
