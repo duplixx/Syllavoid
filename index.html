@@ -15,6 +15,7 @@
     <title>Document</title>
   </head>
   <body class="">
+    <div id="preloader"></div>
     <div class="page-bg"></div>
     <div class="animation-wrapper">
       <div class="particle particle-1"></div>
@@ -190,6 +191,14 @@
     </footer> -->
     <script src="js/typewriter.js"></script>
     <script src="js/search.js"></script>
+    <script>
+      var loader = document.getElementById("preloader");
+          window.addEventListener("load",function(){
+              loader.style.display="none";
+              
+      
+          })
+      </script>
     <script>
       function reveal() {
         var reveals = document.querySelectorAll(".reveal");

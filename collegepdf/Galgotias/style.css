@@ -1,0 +1,10 @@
+#preloader{
+    background: #000 url(https://i.pinimg.com/originals/85/e2/4b/85e24bd18e3658cd321688b4c34cc576.gif) no-repeat center center;
+    background-size:30%;
+    height:100%;
+  
+    width:100%;
+    position:fixed;
+    z-index: 100;
+  
+  }
