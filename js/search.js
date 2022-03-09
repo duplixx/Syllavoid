@@ -21,7 +21,7 @@ const countries = [
     suggestions.forEach(function(suggested) {
       suggestionsPanel.style.display = 'block'
       const div = document.createElement('a');
-      div.href = `js/${suggested.name}.html`
+      div.href = `collegepdf/${suggested.name}/${suggested.name}.html`
       div.innerHTML = suggested.name;
       div.classList.add("suggested");
 
