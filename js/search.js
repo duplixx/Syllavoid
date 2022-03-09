@@ -28,6 +28,7 @@ const countries = [
       // dev.addEventListener('')
       suggestionsPanel.appendChild(div);
     });
+      //minor
 
     if (input === '') {
       suggestionsPanel.innerHTML = '';  
