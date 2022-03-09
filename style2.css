@@ -1,0 +1,121 @@
+
+.sign-up{
+    font-family: sans-serif;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 350px;
+    padding: 20px;
+    transition: all 200ms ease-in-out;
+    box-shadow: 1px 5px 15px 0 #f8002f;
+    background: white;
+    border-radius: 15px;
+    z-index: 10;
+}
+.sign-up.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+.sign-up h1{
+    font-size: 40px;
+    color: #f8002f;
+    padding-left: 60px;
+    font-weight: 700;
+    
+}
+.sign-up .input{
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 90%;
+    border: 1px solid #999 ;
+    outline: none;
+}
+.sign-up .input:focus{
+    border: 2px solid red;
+}
+.sign-up .btn1{
+    display: inline-block;
+    background-color: #f8002f;
+background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
+    border-radius: 5px;
+    box-shadow: 2px 10px 22px rgba(94,28,68,0.15);
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.sign-up .check{
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+.sign-up .icons{
+    cursor: pointer;
+}
+.sign-up p{
+    color: rgb(105, 101, 101);
+}
+.sign-up hr{
+    margin-left: 28px;
+    margin-top: 20px;
+    width: 80%;
+}
+.or{
+    background: white;
+    width:30px;
+    margin: -11px auto 10px;
+}
+.sign-up input:checked{
+    color: blue;
+}
+.sign-up .remem{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 13px;
+}
+.sign-up .forgot{
+    font-size: 13px;
+    cursor: pointer;
+    color: grey;
+}
+.btn1:hover{
+    background: linear-gradient(326deg, #db647a 0%, #303436 74%);
+}
+.icons i:hover{
+    transform: translateY(-5px);
+}
+.sign-up .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sign-up .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
