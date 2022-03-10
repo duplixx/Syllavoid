@@ -14,7 +14,6 @@ body {
   background: #000 url(https://i.pinimg.com/originals/85/e2/4b/85e24bd18e3658cd321688b4c34cc576.gif) no-repeat center center;
   background-size:30%;
   height:100%;
-
   width:100%;
   position:fixed;
   z-index: 100;
@@ -37,11 +36,16 @@ input {
   height: 120vh;
 }
 .suggested {
+  /* margin-left: 20px; */
+  
+  width:150px;
+  transform: translate(450%, -20%);
+  background-color: #f4f8f6;
+  border-radius: 10px;
   display: flex;
+  padding: 4px;
   flex-direction: column;
-}
-.suggested > a :hover {
-  color: black;
+  
 }
 .motive-sec {
   background:no-repeat center/ 100% url("https://live.staticflickr.com/3122/2297656899_ce47bb929c_b.jpg");
@@ -260,6 +264,15 @@ center {
     background-size: cover;
     height: 80vh;
   }
+  .suggested {
+    margin-top: 25px;
+    width:150px;
+    transform: translate(80%, -50%);
+    background-color: #f4f8f6;
+    border-radius: 10px;
+    box-shadow: coral;
+  }
+  
   .suggested :hover {
     text-shadow: 4em;
     font-size: 2em;
@@ -719,7 +732,7 @@ center {
     1890px 344px #fff, 2368px 2470px #fff, 2325px 513px #fff, 175px 1815px #fff,
     2541px 2156px #fff, 349px 1789px #fff, 1351px 2107px #fff, 351px 855px #fff;
   height: 1px;
-  width: 1px;
+  width: 2px;
 }
 
 .particle-2 {
@@ -833,8 +846,8 @@ center {
     1975px 2204px #fff, 1568px 2552px #fff, 503px 1388px #fff,
     1735px 2429px #fff, 396px 1674px #fff, 1798px 637px #fff, 2054px 91px #fff,
     24px 1789px #fff, 2058px 2148px #fff, 1910px 250px #fff, 1451px 515px #fff;
-  height: 2px;
-  width: 2px;
+  height: 5px;
+  width: 5px;
 }
 
 .particle-3 {
