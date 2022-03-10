@@ -4,6 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 #preloader{
   background: #000 url(https://i.pinimg.com/originals/85/e2/4b/85e24bd18e3658cd321688b4c34cc576.gif) no-repeat center center;
@@ -580,4 +581,24 @@ footer .detail{
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+.navbar{
+  position: relative;
+}
+.navbar::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  transition: width 0.4s ease-in-out;
+}
+.navbar:hover::after{
+  width: 100%;
+}
+ul li{
+  margin-left: 35px;
 }
