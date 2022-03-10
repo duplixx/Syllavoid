@@ -3,18 +3,19 @@
     font-family: sans-serif;
     text-align: center;
     position: fixed;
-    top: 50%;
+    top: 0;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     width: 350px;
     padding: 20px;
-    transition: all 200ms ease-in-out;
+    transition: all 400ms ease-in-out;
     box-shadow: 1px 5px 15px 0 #f8002f;
     background: white;
     border-radius: 15px;
     z-index: 10;
 }
 .sign-up.active{
+    top:50%;
     transform: translate(-50%, -50%) scale(1);
 }
 .sign-up h1{
