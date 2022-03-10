@@ -17,9 +17,13 @@
 
 <body>
   <div id="preloader"></div>
-  <h1 class="sylla">
-    Sylla<span class="text-red-600 void">Void</span><span class="subscript">pdfview</span>
-  </h1>
+  <div class="header">
+
+    <h1 class="sylla">
+      Sylla<span class="text-red-600 void">Void</span><span class="subscript">pdfview</span>
+    </h1>
+    <a class="home" href=""><button>HOME</button></a>
+  </div>
   <div class="text-center">
     <h1>Galgotia University Pdf</h1>
   </div>
@@ -32,11 +36,11 @@
     </div>
     <div>
       <button class="btn" id="prev-page">
-
-        <i class="fa-solid fa-arrow-left"></i>
+        <img 
+          src="https://img.icons8.com/external-prettycons-solid-prettycons/60/000000/external-left-arrow-orientation-prettycons-solid-prettycons.png" />
       </button>
       <button class="btn" id="next-page">
-        <i class="fa-solid fa-arrow-right"></i>
+        <img src="https://img.icons8.com/external-prettycons-solid-prettycons/60/000000/external-right-arrow-orientation-prettycons-solid-prettycons.png"/>
       </button>
       <span>
         Page <span id="page-num"></span> of <span id="page-count"></span>
@@ -80,7 +84,7 @@
       </div>
     </div>
     <hr>
-    <p class="end">Made with <i class="fa-solid fa-heart"></i> by team.</p>
+    <p class="end">Made with <i class="fa-solid fa-heart"></i> by team HackerJack.</p>
   </footer>
   <script src="./main.js"></script>
   <script>
