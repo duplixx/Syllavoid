@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/feedback.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Feedback</title>
+</head>
+<body>
+    <section class="feedbackCont">
+        <div class="feedback">
+          <span class="feedbackText-cont">
+            <h2 class="feedbackText h-8">
+              Your feedback will help us make better
+            </h2>
+          </span>
+          <form class="feedbackFormCont">
+            <div class="button-cont">
+              <h3 class="button-text">Did you achieve your goal?</h3>
+              <center>
+                <button class="goalBtn">Yes</button>
+                <button class="goalBtn">Satisfied</button>
+                <button class="goalBtn">No</button>
+              </center>
+            </div>
+            <div class="flex flex-col w-[80%]">
+              <label for="reason">What is the reason for your visit?</label>
+              <input type="text" id="reason" />
+            </div>
+            <div class="w-[80%]">
+              <label for="suggest"
+                >Do you have any suggestions to make our website better?</label
+              >
+              <textarea
+                name="suggestion"
+                id="suggest"
+                cols="50"
+                rows="10"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+      </section>
+</body>
+</html>

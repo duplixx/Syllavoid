@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/91052885a4.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/91052885a4.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/style2.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/particle.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -17,7 +20,7 @@
     />
     <title>Document</title>
   </head>
-  <body class="">
+  <body>
     <div id="preloader"></div>
     <div class="page-bg"></div>
     <div class="animation-wrapper">
@@ -35,7 +38,7 @@
             Sylla<span class="text-red-600 void">Void</span>
           </h1>
         </li>
-        <li><button id="open" >SIGN IN</button></li>
+        <li><button id="open">SIGN IN</button></li>
       </ul>
     </nav>
     <section class="search h-[80vh]">
@@ -62,11 +65,11 @@
             <input
               type="text"
               placeholder="Search..."
-              class="search-input px-5 py-2 shadow-md rounded-xl shadow-white text-red-500 focus:bg-blue-200"
+              class="search-input px-5 py-2 rounded-[4px] shadow-white text-red-500 focus:bg-blue-200 w-[40%]"
             />
           </div>
           <div
-            class="suggestions  font-3xl font-bold md:text-xl mt-8 text-center text-red-600 animate-bounce hover:animate-none active:text-white active:text-3xl"
+            class="suggestions font-3xl font-bold md:text-xl mt-8 text-center text-red-600 animate-bounce hover:animate-none active:text-white active:text-3xl"
           ></div>
         </div>
       </div>
@@ -147,120 +150,102 @@
         </div>
       </div>
     </section>
-    <hr id="hr1" />
-    <section class="feedbackCont">
-      <div class="feedback">
-        <span class="feedbackText-cont">
-          <h2 class="feedbackText h-8">
-            Your feedback will help us make better
-          </h2>
-        </span>
-        <form class="feedbackFormCont">
-          <div class="button-cont">
-            <h3 class="button-text">Did you achieve your goal?</h3>
-            <center>
-              <button class="goalBtn">Yes</button>
-              <button class="goalBtn">Satisfied</button>
-              <button class="goalBtn">No</button>
-            </center>
-          </div>
-          <div class="flex flex-col w-[80%]">
-            <label for="reason">What is the reason for your visit?</label>
-            <input type="text" id="reason" />
-          </div>
-          <div class="w-[80%]">
-            <label for="suggest"
-              >Do you have any suggestions to make our website better?</label
-            >
-            <textarea
-              name="suggestion"
-              id="suggest"
-              cols="50"
-              rows="10"
-            ></textarea>
-          </div>
-        </form>
-      </div>
-    </section>
-    <hr />
     <footer>
       <div class="row">
-          <div class="col">
-            <h1 class="sylla">
-              Sylla<span class="text-red-600 void">Void</span>
-            </h1>
-              <p class="detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo reprehenderit perferendis ea
-                  consectetur eum, suscipit odio. Modi nisi quis quos, neque beatae libero amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laborum obcaecati ipsam consectetur, similique vero harum deserunt vitae voluptatibus tempore id omnis iusto, laboriosam eos ut! Quasi ea quae perferendis!</p>
-          </div>
-          <div class="col">
-              <h3>Office <div class="underline"><span></span></div></h3>
-              <p>XYZ Road</p>
-              <p>ABCDE, Noida</p>
-              <p>Delhi, PIN 231010, India</p>
-              <p class="email">xyz123@gmail.com</p>
-              <h4>+91 - 0123456789</h4>
-          </div>
-          <div class="col">
-              <h3>Contact <div class="underline"><span></span></div></h3>
-              <form action="">
-                  <i class="fa-solid fa-envelope"></i>
-                  <input type="email" placeholder="Enter Your Email-id">
-                  <button><i class="fa-solid fa-arrow-right"></i></button> 
-              </form>
-              <div class="social">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                  <i class="fa-brands fa-instagram"></i>
-              </div>
-          </div>
-      </div>
-      <hr>
-      <p class="end" >Made with <i class="fa-solid fa-heart"></i> by team.</p>
-  </footer>
-  
-    <div class="sign-up" id="modal">
-        <div class="header">
-            <h1>Welcome</h1>
-            <button id="closed" class="close-button">&times;</button>
+        <div class="col">
+          <h1 class="sylla">
+            Sylla<span class="text-red-600 void">Void</span>
+          </h1>
+          <p class="detail">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+            reprehenderit perferendis ea consectetur eum, suscipit odio. Modi
+            nisi quis quos, neque beatae libero amet! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Perspiciatis laborum obcaecati ipsam
+            consectetur, similique vero harum deserunt vitae voluptatibus
+            tempore id omnis iusto, laboriosam eos ut! Quasi ea quae
+            perferendis!
+          </p>
         </div>
-        <form>
-            <input type="email" class="input" placeholder="Enter your Email-Id">
-            <input type="password" class="input" placeholder="Enter your Password">
-        </form>
-        <p class="remem"> <span><input type="checkbox"></span> Remember Me </p>
-        <button class="btn1">LOGIN</button>
-        <p class="forgot">Forgot Password?</p>
-        <hr>
-        <p class="or">OR</p>
-        <p>Need an account ? <a href="sign.html">SIGN UP</a></p>
+        <div class="col">
+          <h3>
+            Office
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>XYZ Road</p>
+          <p>ABCDE, Noida</p>
+          <p>Delhi, PIN 231010, India</p>
+          <p class="email">xyz123@gmail.com</p>
+          <h4>+91 - 0123456789</h4>
+        </div>
+        <div class="col">
+          <h3>
+            Contact
+            <div class="underline"><span></span></div>
+          </h3>
+          <form action="">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Enter Your Email-id" />
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+          <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="end">
+        Made with <i class="fa-solid fa-heart"></i> by team HackerJacks.
+      </p>
+    </footer>
+    <div class="sign-in" id="modal">
+      <div class="header">
+        <h1>Welcome</h1>
+        <button id="closed" class="close-button">&times;</button>
+      </div>
+      <form>
+        <input type="email" class="input" placeholder="Enter your Email-Id" />
+        <input
+          type="password"
+          class="input"
+          placeholder="Enter your Password"
+        />
+      </form>
+      <p class="remem">
+        <span><input type="checkbox" /></span> Remember Me
+      </p>
+      <button class="btn1">LOGIN</button>
+      <p class="forgot">Forgot Password?</p>
+      <hr />
+      <p class="or">OR</p>
+      <p>Need an account ? <a href="sign.html">SIGN UP</a></p>
     </div>
     <div id="overlay"></div>
     <script>
-        const open = document.getElementById('open')
-        const container = document.getElementById('modal')
-        const close = document.getElementById('closed')
-        const overlay = document.getElementById('overlay')
+      const open = document.getElementById("open");
+      const container = document.getElementById("modal");
+      const close = document.getElementById("closed");
+      const overlay = document.getElementById("overlay");
 
-        open.addEventListener('click', () => {
-            container.classList.add('active');
-            overlay.classList.add('active');
-        });
-        close.addEventListener('click', () => {
-            container.classList.remove('active');
-            overlay.classList.remove('active');
-        });
+      open.addEventListener("click", () => {
+        container.classList.add("active");
+        overlay.classList.add("active");
+      });
+      close.addEventListener("click", () => {
+        container.classList.remove("active");
+        overlay.classList.remove("active");
+      });
     </script>
     <script src="js/typewriter.js"></script>
     <script src="js/search.js"></script>
     <script>
       var loader = document.getElementById("preloader");
-          window.addEventListener("load",function(){
-              loader.style.display="none";
-              
-      
-          })
-      </script>
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
     <script>
       function reveal() {
         var reveals = document.querySelectorAll(".reveal");
@@ -304,7 +289,7 @@
         for (var i = 0; i < rerevealsSide.length; i++) {
           var windowHeight = window.innerHeight;
           var elementleft = rerevealsSide[i].getBoundingClientRect().top;
-          var elementVisible = -150;
+          var elementVisible = -350;
 
           if (elementleft < windowHeight - elementVisible) {
             rerevealsSide[i].classList.add("active");
@@ -314,7 +299,6 @@
         }
       }
       window.addEventListener("scroll", rerevealSide);
-      
     </script>
   </body>
 </html>
