@@ -60,14 +60,9 @@ hr{
   color: white;
   margin: 15px auto 30px;
   width: 90%;
-}
-.btn{
-  font-size: 30px;
-  padding:  0 10px;
-  border-radius: 25%;
-  margin-left: 5px;
-  margin-right: 10px;
-  margin-bottom: 15px;
+}img{
+  border-radius: 9999px;
+
 }
 @media (max-width:700px){
   #pdfrender{
@@ -249,11 +244,6 @@ footer h1{
 footer .detail{
   max-width: 360px;
 }
-img {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-}
 .header{
   display: flex;
   justify-content: space-between;
@@ -261,15 +251,25 @@ img {
 }
 .header button{
   display: inline-block;
-  background-color: #f8002f;
-  background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
+  background:#b2b209;
   border-radius: 5px;
-  box-shadow: 2px 10px 22px rgba(94,28,68,0.15);
+  box-shadow: 2px 10px 22px rgba(236, 227, 233, 0.15);
   text-decoration: none;
   padding: 10px 20px;
-  color: white;
+  color: #000;
   box-sizing: border-box;
   margin-top: 15px;
   margin-bottom: 5px;
   cursor: pointer;
+}
+.header button:hover{
+  background-color: #ef5734;
+background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+  font-weight: 700;
+  border: 2px solid red;
+}
+.home-nav{
+  color:rgb(253, 251, 251);
+  font-size: 20px;
+  padding-right: 5px;
 }
