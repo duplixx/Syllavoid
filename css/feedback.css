@@ -1,0 +1,60 @@
+.feedbackCont {
+    display: flex;
+    height: 70vh;
+    place-content: center;
+  }
+  .feedback {
+    border: solid #000 1px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    width: 500px;
+  }
+  .feedbackText-cont {
+    background-color: #2FA4FF;
+    display: flex;
+    height: 100%;
+    padding: 0 20px;
+  }
+  .feedbackText {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    place-self: center;
+  }
+  .feedbackFormCont {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    flex-direction: column;
+    place-items: center;
+  }
+  .button-text {
+    margin: 16px;
+  }
+  center {
+    width: 100%;
+  }
+  .goalBtn {
+    background-color: #fff;
+    border: solid 0.5px;
+    border-radius: 7px;
+    margin: 0 10px;
+    padding: 8px;
+    width: 120px;
+  }
+  .goalBtn:hover {
+    background-color: #2FA4FF;
+    color: #fff;
+  }
+  #reason,
+  #suggest {
+    border: solid 1px;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+  }
+  #suggest {
+    padding: 10px;
+    height: 80px;
+  }
+  
