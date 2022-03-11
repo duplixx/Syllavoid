@@ -421,6 +421,19 @@ footer .social .fa-brands {
   margin-right: 15px;
   cursor: pointer;
 }
+.feedback-btn {
+  background-color: green;
+  border: solid green 1px;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0.8;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.feedback-btn:hover {
+  box-shadow: 0 0 5px white;
+}
 @media screen and (max-width: 1500px) and (max-height: 1000px) {
   .pf-png {
     position: static;
