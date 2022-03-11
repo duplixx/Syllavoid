@@ -180,18 +180,21 @@ nav {
 }
 .vector-img {
   animation: animation;
-  animation-duration: 4s;
+  animation-duration: 7s;
  animation-iteration-count: infinite;
   position: absolute;
   left: -100px;
   transform: rotate(10deg);
 }
 @keyframes animation {
-  from {
+  0% {
     top: 250px;
   }
-  to {
+  50% {
     top: 300px;
+  }
+  100%{
+    top:250px;
   }
 }
 .container {
