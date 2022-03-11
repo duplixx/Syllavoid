@@ -54,7 +54,7 @@
     font-weight: 600;
     text-align: center;
     background: rgb(2,0,36);
-    background: linear-gradient(180deg, #13b3be,#85fcfc);
+    background: linear-gradient(180deg, #c2a11a,#fc9685);
     backface-visibility: hidden;
     border-radius: 10px;
     
@@ -63,7 +63,7 @@
   .flip-card .back {
     transform: rotateY(180deg);
     color: #000;
-    background: linear-gradient(180deg, #63f5bd, #00ffff);
+    background: linear-gradient(180deg, #c2a11a,#fc9685);
   
     
   }
@@ -127,18 +127,10 @@
     width: 180px;
     margin: 5px auto 3px auto;
   }
-  .back ul{
-    font-size: 1px;
-  
-  }
-  .back li {
-    text-decoration: none;
-    font-size: 16px;
-    color: #000;
-    padding: 0 5px 0 5px;
-    line-height: 30px;
-    text-align: center;
-    margin: 0 auto;
+  .back p {
+    text-align: left;
+    font-size: 17px;
+    padding-left: 15px;
   }
   
 @media screen and (max-width: 600px){

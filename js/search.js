@@ -1,10 +1,4 @@
 const countries = [
-<<<<<<< Updated upstream
-    {name: 'Gcet'},
-    {name: 'Sharda University'},
-    {name: 'Amity University'},
-    {name: 'Galgotias'},
-=======
     {name: 'GCET'},
     {name: 'AMITY UNIVERSITY'},
     {name: 'BIT MESRA'},
@@ -18,7 +12,6 @@ const countries = [
     
 
 
->>>>>>> Stashed changes
     
   ];
   
