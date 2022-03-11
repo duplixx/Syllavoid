@@ -12,13 +12,17 @@
     <link rel="stylesheet" href="css/style2.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/particle.css" />
+    <link rel="stylesheet" href="css/flipcard.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/flipcard.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
   </head>
   <body class="scroll-smooth">
@@ -30,32 +34,29 @@
       <div class="particle particle-3"></div>
       <div class="particle particle-4"></div>
     </div>
-    <nav
-      class="flex justify-between pt-10 px-5 text-xl text-white font-bold mouse-pointer" >
-    <div class="tit"> 
-      <h1 class="sylla">
-        Sylla<span class="text-red-600 void">Void</span>
-      </h1>
-    </div>
-    <div class="n">
-
-      <ul class="nav-content">
-          
+    <nav>
+      <h1 class="sylla">Sylla<span class="text-red-600 void">Void</span></h1>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/menu--v4.png" id="burger" />
+      <div class="main-nav">
+        <ul class="hidden span-1 flex md:grid nav-content" id="menu">
           <li>
-           <a class="navbar" href="#motive">Motive</a>
+            <a class="navbar" href="#motive">Motive</a>
           </li>
           <li>
-           <a class="navbar" href="#teams">Team</a>
+            <a class="navbar" href="#teams">Team</a>
           </li>
           <li>
-           <a class="navbar" href="#tools">Tools</a>
+            <a class="navbar" href="#tools">Tools</a>
           </li>
-          <li><button class="navbar" id="open">SignIn</button></li>
+          <li>
+            <button class="signin_btn" id="open">SignIn</button>
+          </li>
         </ul>
-    </div> 
+      </div>
     </nav>
     <section class="search h-[80vh]">
-      <div class="mt-[200px]">
+      <img src="https://www.pngall.com/wp-content/uploads/5/Astronaut-Vector-Transparent.png" alt="" class="vector-img">
+      <div class="mt-[200px] md:m-0">
         <h1
           class="text-center mt-16 text-white text-xl md:text-5xl text-shadow-l font-bold"
         >
@@ -75,11 +76,7 @@
         >
         <div class="mt-2 flex flex-col justify-center align-center relative">
           <div class="containerS">
-            <input
-              type="text"
-              placeholder="Search..."
-              class="search-input"
-            />
+            <input type="text" placeholder="Search..." class="search-input" />
             <div class="searchS"></div>
           </div>
           <div
@@ -89,14 +86,14 @@
       </div>
     </section>
     <section class="motive-sec">
-      <div id="motive" class="motive-sec1">
+      <div class="motive-sec1">
         <div class="motive">
           <h2 class="motive-head">Motive</h2>
           <p class="motive-text text-center mt-8 md:mt-16">
             Having complications in finding syllabus of colleges?<br /><br />
-            Here's the solution...Get the syllabus of any college you
-              want...we are hereby providing you the syllabus of the different
-              colleges you might be searching for.
+            Here's the solution...Get the syllabus of any college you want...we
+            are hereby providing you the syllabus of the different colleges you
+            might be searching for.
           </p>
         </div>
       </div>
@@ -162,16 +159,16 @@
         </div>
       </div>
     </section>
-    <!-- write one liner for each tool in h2 tag and its description in back li -->
-    <div id="tools" class="tools">   
+    <div id="tools" class="tools">
       <h2 id="tools-title">Tools Used</h2>
       <section id="themes-section" class="section themes-section">
-        
         <label class="jadu slideanim">
           <input type="checkbox" />
           <div class="flip-card">
             <div class="front">
-              <img src="https://img.icons8.com/color/120/000000/html-5--v1.png"/>
+              <img
+                src="https://img.icons8.com/color/120/000000/html-5--v1.png"
+              />
               <h1>HTML:5</h1>
               <h2>Pioneerering education</h2>
               <p>Click for more info</p>
@@ -194,7 +191,7 @@
           <input type="checkbox" />
           <div class="flip-card">
             <div class="front">
-              <img src="https://img.icons8.com/color/120/000000/css3.png"/>
+              <img src="https://img.icons8.com/color/120/000000/css3.png" />
               <!-- Write one liner about each tool in h2 section and their desciption in li section  -->
               <h1>CSS:3</h1>
               <h2>Health care Solutions</h2>
@@ -218,11 +215,12 @@
           <input type="checkbox" />
           <div class="flip-card">
             <div class="front">
-              <img src="https://img.icons8.com/color/120/000000/javascript--v1.png"/>
+              <img
+                src="https://img.icons8.com/color/120/000000/javascript--v1.png"
+              />
               <h1>JAVASCRIPT</h1>
-              <h2>Fullfilling consumer needs </h2>
+              <h2>Fullfilling consumer needs</h2>
               <p>Click for more info</p>
-    
             </div>
             <div class="back">
               <h1>Sub-themes</h1>
@@ -240,7 +238,10 @@
           <input type="checkbox" />
           <div class="flip-card">
             <div class="front">
-              <img src="https://hight.io/_nuxt/img/tailwind.3558838.png" alt="">
+              <img
+                src="https://hight.io/_nuxt/img/tailwind.3558838.png"
+                alt=""
+              />
               <h1>TAILWIND CSS</h1>
               <h2>Financial Solutions</h2>
               <p>Click for more info</p>
@@ -257,7 +258,6 @@
             </div>
           </div>
         </label>
-       
       </section>
     </div>
     <footer>
@@ -303,7 +303,6 @@
             <i class="fa-brands fa-linkedin"></i>
             <i class="fa-brands fa-instagram"></i>
           </div>
-          <a href="feedback.html"><button class="feedback_">Feedback</button></a>
         </div>
       </div>
       <hr />
@@ -331,9 +330,20 @@
       <p class="forgot">Forgot Password?</p>
       <hr />
       <p class="or">OR</p>
-      <p>Need an account ? <a href="signup.html">SIGN UP</a></p>
+      <p>Need an account ? <a href="sign.html">SIGN UP</a></p>
     </div>
     <div id="overlay"></div>
+    <script>
+      const burger = document.querySelector('#burger');
+      const menu = document.querySelector('#menu');
+      burger.addEventListener("click", () => {
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+        } else {
+          menu.classList.add("hidden");
+        }
+      });
+    </script>
     <script>
       const open = document.getElementById("open");
       const container = document.getElementById("modal");

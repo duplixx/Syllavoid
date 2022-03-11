@@ -60,9 +60,14 @@ hr{
   color: white;
   margin: 15px auto 30px;
   width: 90%;
-}img{
-  border-radius: 9999px;
-
+}
+.btn{
+  font-size: 30px;
+  padding:  0 10px;
+  border-radius: 25%;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-bottom: 15px;
 }
 @media (max-width:700px){
   #pdfrender{
@@ -129,7 +134,7 @@ footer .colr:nth-child(2){
 footer .email{
   width: fit-content;
   border-bottom: 1px solid white;
-  margin: 5px 0;
+  margin: 20px 0;
 }
 footer form{
   display: flex;
@@ -243,33 +248,4 @@ footer h1{
 }
 footer .detail{
   max-width: 360px;
-}
-.header{
-  display: flex;
-  justify-content: space-between;
-  width: 95%;
-}
-.header button{
-  display: inline-block;
-  background:#b2b209;
-  border-radius: 5px;
-  box-shadow: 2px 10px 22px rgba(236, 227, 233, 0.15);
-  text-decoration: none;
-  padding: 10px 20px;
-  color: #000;
-  box-sizing: border-box;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-.header button:hover{
-  background-color: #ef5734;
-background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
-  font-weight: 700;
-  border: 2px solid red;
-}
-.home-nav{
-  color:rgb(253, 251, 251);
-  font-size: 20px;
-  padding-right: 5px;
 }

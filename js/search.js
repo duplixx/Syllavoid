@@ -1,8 +1,8 @@
 const countries = [
-    {name: 'GCET'},
-    {name: 'SHARDA UNIVERSITY'},
-    {name: 'AMITY UNIVERSITY'},
-    {name: 'GALGOTIAS UNIVERSITY'},
+    {name: 'Gcet'},
+    {name: 'Sharda University'},
+    {name: 'Amity University'},
+    {name: 'Galgotias'},
     
   ];
   
