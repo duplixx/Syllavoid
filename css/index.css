@@ -11,8 +11,8 @@ body {
 }
 #preloader {
   background: #000
-    url(https://i.pinimg.com/originals/85/e2/4b/85e24bd18e3658cd321688b4c34cc576.gif)
-    no-repeat center center;
+  url(https://i.pinimg.com/originals/85/e2/4b/85e24bd18e3658cd321688b4c34cc576.gif)
+  no-repeat center center;
   background-size: 30%;
   height: 100%;
   width: 100%;
@@ -178,8 +178,8 @@ ul {
   width: 40%;
 }
 .suggested {
-  width: 150px;
-  transform: translate(450%, -20%);
+  width: 550px;
+  transform: translate(85%, -0%);
   background-color: #f4f8f6;
   border-radius: 10px;
   display: flex;
@@ -572,6 +572,12 @@ footer .detail {
     width: 300px;
     height: 100px;
   }
+  .suggested{
+    width:50%;
+    transform: translate(50%,-10%);
+    
+  
+  }
   .containerS .searchS {
     position: absolute;
     margin: auto;
@@ -618,6 +624,19 @@ footer .detail {
     border: 2px solid white;
     transition: all 0.5s;
   }
+  @media screen and (max-width: 430px) {
+    .feedback,
+    label {
+      font-size: 15px;
+    }
+    .goalBtn {
+      font-size: 12px;
+      padding: 5px;
+      margin: 2%;
+    }
+    
+  }
+   
   .containerS .search-input {
     position: absolute;
     margin: auto;
@@ -714,19 +733,7 @@ footer .detail {
   .goalBtn {
     width: 27%;
   }
-}
-@media screen and (max-width: 430px) {
-  .feedback,
-  label {
-    font-size: 15px;
-  }
-  .goalBtn {
-    font-size: 12px;
-    padding: 5px;
-    margin: 2%;
-  }
-}
-
+}  
 /* Scroll effect */
 .reveal {
   position: relative;
@@ -778,3 +785,22 @@ footer .detail {
 ul li{
   margin-left: 35px;
 }
+
+@media screen and (max-width: 430px) {
+  .feedback,
+  label {
+    font-size: 15px;
+  }
+  .goalBtn {
+    font-size: 12px;
+    padding: 5px;
+    margin: 2%;
+  }
+  .suggested{
+    width:50%;
+    transform: translateX(50%);
+    
+  
+  }
+}
+ 
