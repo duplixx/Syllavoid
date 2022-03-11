@@ -1,8 +1,24 @@
 const countries = [
+<<<<<<< Updated upstream
     {name: 'Gcet'},
     {name: 'Sharda University'},
     {name: 'Amity University'},
     {name: 'Galgotias'},
+=======
+    {name: 'GCET'},
+    {name: 'AMITY UNIVERSITY'},
+    {name: 'BIT MESRA'},
+    {name: 'IIT BHU'},
+    {name: 'GALGOTIAS UNIVERSITY'},
+    {name: 'NIT HAMIRPUR'},
+    {name: 'NIT SIKKIM'},
+    {name: 'VIT CHENNAI'},
+    {name: 'IIT DHANBAD'}
+
+    
+
+
+>>>>>>> Stashed changes
     
   ];
   
