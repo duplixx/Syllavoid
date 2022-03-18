@@ -128,13 +128,13 @@ button{
   transition: all 0.4s linear;
   
 }
-button:hover{
+/* button:hover{
   font-weight: bolder;
   font-size:1.1rem;
  background:rgb(2, 168, 2);
-}
+} */
 .home_{
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 40px;
-} 
+}
