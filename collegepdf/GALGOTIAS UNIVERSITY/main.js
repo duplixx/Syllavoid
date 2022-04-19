@@ -1,5 +1,5 @@
 
-const url = './Galgotias.pdf';
+const url = './galgotias.pdf';
 
 let pdfDoc = null,
   pageNum = 1,
