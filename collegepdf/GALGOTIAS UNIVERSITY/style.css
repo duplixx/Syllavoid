@@ -249,3 +249,19 @@ footer h1{
 footer .detail{
   max-width: 360px;
 }
+
+#home___{
+  margin-bottom: 20px;
+}
+#home___ button{
+
+  cursor: pointer;
+  border-radius: 10px;
+  letter-spacing: 1.1;
+  padding: 10px;
+  color: white;
+  background-color: rgb(216, 52, 52);
+}
+#home___ button:hover{
+  background-color: rgb(236, 33, 33);
+}
