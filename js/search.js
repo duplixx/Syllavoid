@@ -28,7 +28,7 @@ const countries = [
     
     // append su
     suggestions.forEach(function(suggested) {
-      suggestionsPanel.style.display = 'block'
+      suggestionsPanel.style.display = 'flex'
       const div = document.createElement('a');
       div.href = `collegepdf/${suggested.name}/${suggested.name}.html`
       div.innerHTML = suggested.name;
