@@ -553,8 +553,8 @@ footer .detail {
   }
   .suggested {
     margin-top: 25px;
-    width: 550px;
-    transform: translate(80%, -50%);
+/*     width: 550px; */
+/*     transform: translate(80%, -50%); */
     background-color: #f4f8f6;
     border-radius: 10px;
     box-shadow: coral;
@@ -639,7 +639,7 @@ footer .detail {
   }
   .suggested {
     width: 250px;
-    transform: translate(40%, -20%);
+/*     transform: translate(40%, -20%); */
     background-color: #f4f8f6;
     border-radius: 10px;
     display: flex;
