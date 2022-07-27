@@ -20,7 +20,7 @@ const countries = [
   const suggestionsPanel = document.querySelector('.suggestions');
   suggestionsPanel.style.display = 'none'
   searchInput.addEventListener('keyup', function() {
-    const input = searchInput.value;
+    const input = searchInput.value.toLowerCase();
     suggestionsPanel.innerHTML = '';
     const suggestions = countries.filter(function(country) {
       return country.name.toLowerCase().startsWith(input);
