@@ -835,3 +835,19 @@ footer .detail {
 .navbar:hover::after{
   width: 100%;
 }
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
