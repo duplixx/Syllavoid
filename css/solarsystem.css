@@ -1,0 +1,190 @@
+  #system {
+    background-color: black;
+    transform-origin: 50% 50%;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    animation: background-move 100s ease infinite;
+    z-index: -1;
+  }
+  
+  .star, .planet, .asteroid, .belt {
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 10%;
+  }
+  
+  .star {
+    width: 2em;
+    height: 2em;
+    background-color: darkorange;
+    box-shadow: 0px 0px 20px 0px #f5996e;
+  }
+  
+  .planet {
+    background-color: transparent;
+    border: 0.5px solid rgba(73, 104, 153, 0.8);
+  }
+  .planet::before {
+    top: 50%;
+    display: inline-block;
+    content: "";
+    border-radius: 50%;
+    box-shadow: inset 0px -3px 0px -1px rgba(19, 22, 33, 0.7);
+  }
+  
+  #asteroidBelt {
+    animation: orbit 250s linear reverse infinite;
+  }
+  
+  #kuiperBelt {
+    animation: orbit 700s linear reverse infinite;
+  }
+  
+  .asteroid {
+    background-color: gray;
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    box-shadow: 1px 1px solid black;
+  }
+  
+  #mercury {
+    animation: orbit 4s linear reverse infinite;
+    width: 90px;
+    height: 90px;
+    margin-top: -45.5px;
+    margin-left: -45.5px;
+  }
+  #mercury::before {
+    box-sizing: border-box;
+    margin: -77.5px;
+    background-color: LightGray;
+    width: 4px;
+    height: 4px;
+  }
+  
+  #venus {
+    animation: orbit 6s linear reverse infinite;
+    width: 130px;
+    height: 130px;
+    margin-top: -65.5px;
+    margin-left: -65.5px;
+  }
+  #venus::before {
+    box-sizing: border-box;
+    margin: -117.5px;
+    background-color: Khaki;
+    width: 4px;
+    height: 4px;
+  }
+  
+  #earth {
+    animation: orbit 8s linear reverse infinite;
+    width: 170px;
+    height: 170px;
+    margin-top: -85.5px;
+    margin-left: -85.5px;
+  }
+  #earth::before {
+    box-sizing: border-box;
+    margin: -158.5px;
+    background-color: DodgerBlue;
+    width: 5px;
+    height: 5px;
+  }
+  
+  #mars {
+    animation: orbit 10s linear reverse infinite;
+    width: 250px;
+    height: 250px;
+    margin-top: -125.5px;
+    margin-left: -125.5px;
+  }
+  #mars::before {
+    box-sizing: border-box;
+    margin: -238.5px;
+    background-color: DarkRed;
+    width: 5.5px;
+    height: 5.5px;
+  }
+  
+  #jupiter {
+    animation: orbit 20s linear reverse infinite;
+    width: 530px;
+    height: 530px;
+    margin-top: -265.5px;
+    margin-left: -265.5px;
+  }
+  #jupiter::before {
+    box-sizing: border-box;
+    margin: -522.5px;
+    background-color: Chocolate;
+    width: 12px;
+    height: 12px;
+  }
+  
+  #saturn {
+    animation: orbit 35s linear reverse infinite;
+    width: 630px;
+    height: 630px;
+    margin-top: -315.5px;
+    margin-left: -315.5px;
+  }
+  #saturn::before {
+    box-sizing: border-box;
+    margin: -621.5px;
+    background-color: Gold;
+    width: 11px;
+    height: 11px;
+  }
+  
+  #uranus {
+    animation: orbit 60s linear reverse infinite;
+    width: 780px;
+    height: 780px;
+    margin-top: -390.5px;
+    margin-left: -390.5px;
+  }
+  #uranus::before {
+    box-sizing: border-box;
+    margin: -770.5px;
+    background-color: PaleTurquoise;
+    width: 8px;
+    height: 8px;
+  }
+  
+  #neptune {
+    animation: orbit 90s linear reverse infinite;
+    width: 940px;
+    height: 940px;
+    margin-top: -470.5px;
+    margin-left: -470.5px;
+  }
+  #neptune::before {
+    box-sizing: border-box;
+    margin: -929.5px;
+    background-color: PowderBlue;
+    width: 7px;
+    height: 7px;
+  }
+  
+  @keyframes orbit {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes background-move {
+    50% {
+      background-position: -600px;
+    }
+  }

@@ -8,11 +8,14 @@
       src="https://kit.fontawesome.com/91052885a4.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="js/pdf.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style2.css" />
+    <!-- <link rel="stylesheet" href="css/style2.css" /> -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/particle.css" />
     <link rel="stylesheet" href="css/flipcard.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -23,7 +26,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    <title>SyllaVoid</title>
   </head>
   <body class="scroll-smooth">
     <div id="preloader"></div>
@@ -36,7 +39,10 @@
     </div>
     <nav>
       <h1 class="sylla">Sylla<span class="text-red-600 void">Void</span></h1>
-      <img src="https://img.icons8.com/ios-filled/50/ffffff/menu--v4.png" id="burger" />
+      <img
+      src="https://img.icons8.com/ios-filled/50/ffffff/menu--v4.png"
+      id="burger"
+      />
       <div class="main-nav">
         <ul class="hidden span-1 flex md:grid nav-content" id="menu">
           <li>
@@ -49,32 +55,37 @@
             <a class="navbar" href="#tools">Tools</a>
           </li>
           <li>
-            <button class="signin_btn" id="open">SignIn</button>
+            <button class="signin_btn navbar" id="open">SignIn</button>
           </li>
         </ul>
       </div>
     </nav>
     <section class="search h-[80vh]">
-      <img src="https://www.pngall.com/wp-content/uploads/5/Astronaut-Vector-Transparent.png" alt="" class="vector-img">
+      <img
+      src="https://www.pngall.com/wp-content/uploads/5/Astronaut-Vector-Transparent.png"
+      alt=""
+      class="vector-img"
+      />
       <div class="mt-[200px] md:m-0">
         <h1
           class="text-center mt-16 text-white text-xl md:text-5xl text-shadow-l font-bold"
-        >
+          >
           <a
-            href=""
-            class="typewrite"
+          href=""
+          class="typewrite"
             data-period="2000"
             data-type='[ "...And Hustle for your Syllabus Ends Here", "" ]'
-          >
+            >
             <span class="wrap"></span>
           </a>
         </h1>
         <label
-          for="countries"
-          class="hidden md:block text-center text-l mt-16 font-medium text-white dark:white"
-          >Select your <u class="text-red-500">College</u> 🏫</label
+        for="countries"
+        class="hidden md:block text-center text-l mt-16 font-medium text-white dark:white"
+          >Select your
+          <strong><u class="text-red-500">College</u></strong> 🏫</label
         >
-        <div class="mt-2 flex flex-col justify-center align-center relative">
+        <div class="mt-2 search-cont">
           <div class="containerS">
             <input type="text" placeholder="Search..." class="search-input" />
             <div class="searchS"></div>
@@ -104,60 +115,77 @@
     </section>
     <section class="team-cont" id="teams">
       <div class="team">
+        <!-- <hr class="timeline"> -->
         <h2 class="team-head">Our Team</h2>
         <div class="mem mem-1 rerevealSide">
-          <div class="image-cont">
+          <div class="image-cont-left">
             <img
               src="https://origin-staticv2.sonyliv.com/UI_icons/Multiprofile/profile-07.png"
               alt="p-png"
               class="pf-png pf-png1"
             />
           </div>
-          <h3 class="name">Shekhar Patel</h3>
+          <div>
+            <h3 class="name">Shekhar Patel</h3>
+            <hr class="timeline-connection" />
+            <hr class="timeline-connection2" />
+          </div>
           <p class="team-text">
-            B.Tech (CSE) <br>
+            B.Tech (CSE) <br />
             Web Programming
           </p>
         </div>
         <div class="mem mem-2 revealSide">
-          <div class="image-cont">
+          <div class="image-cont-right">
             <img
               src="https://origin-staticv2.sonyliv.com/UI_icons/Multiprofile/profile-07.png"
               alt="p-png"
               class="pf-png pf-png2"
             />
           </div>
-          <h3 class="name">Sankalp Srivastava</h3>
-            <p class="team-text">
-              B.Tech (CSE) <br>
-              Web Designing
+          <div>
+            <h3 class="name">Sankalp Srivastava</h3>
+            <hr class="timeline-connection" />
+            <hr class="timeline-connection3" />
+          </div>
+          <p class="team-text">
+            B.Tech (CSE) <br />
+            Web Designing
           </p>
         </div>
         <div class="mem mem-1 mem-3 rerevealSide">
-          <div class="image-cont">
+          <div class="image-cont-left">
             <img
               src="https://origin-staticv2.sonyliv.com/UI_icons/Multiprofile/profile-07.png"
               alt="p-png"
               class="pf-png pf-png1"
             />
           </div>
-          <h3 class="name">Mihir Aman Raj</h3>
+          <div>
+            <h3 class="name">Mihir Aman Raj</h3>
+            <hr class="timeline-connection" />
+            <hr class="timeline-connection2" />
+          </div>
           <p class="team-text">
-            B.Tech (CSE AI) <br>
+            B.Tech (CSE AI) <br />
             Web Designing
           </p>
         </div>
         <div class="mem mem-2 mem-4 revealSide">
-          <div class="image-cont">
+          <div class="image-cont-right">
             <img
               src="https://origin-staticv2.sonyliv.com/UI_icons/Multiprofile/profile-07.png"
               alt="p-png"
               class="pf-png pf-png2"
             />
           </div>
-          <h3 class="name">Vivek Singh</h3>
+          <div>
+            <h3 class="name">Vivek Singh</h3>
+            <hr class="timeline-connection" />
+            <hr class="timeline-connection3" />
+          </div>
           <p class="team-text">
-            B.Tech (CSE) <br>
+            B.Tech (CSE) <br />
             Content Editor
           </p>
         </div>
@@ -180,7 +208,9 @@
             <div class="back">
               <h1>More Info</h1>
               <hr />
-              <p class="">HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages.
+              <p class="">
+                HTML stands for Hyper Text Markup Language. HTML is the standard
+                markup language for creating Web pages.
               </p>
               <hr />
             </div>
@@ -199,7 +229,10 @@
             <div class="back">
               <h1>More Info</h1>
               <hr />
-              <p>CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.</p>
+              <p>
+                CSS is the language we use to style an HTML document. CSS
+                describes how HTML elements should be displayed.
+              </p>
               <hr />
             </div>
           </div>
@@ -218,13 +251,16 @@
             <div class="back">
               <h1>More Info</h1>
               <hr />
-              <p>JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web. </p>
+              <p>
+                JavaScript is the world's most popular programming language.
+                JavaScript is the programming language of the Web.
+              </p>
               <hr />
             </div>
           </div>
         </label>
         <label class="jadu slideanim">
-          <input type="checkbox"/>
+          <input type="checkbox" />
           <div class="flip-card">
             <div class="front">
               <img
@@ -238,7 +274,10 @@
             <div class="back">
               <h1>More Info</h1>
               <hr />
-              <p>Tailwind CSS is basically a utility-first CSS framework for rapidly building custom user interfaces.</p>
+              <p>
+                Tailwind CSS is basically a utility-first CSS framework for
+                rapidly building custom user interfaces.
+              </p>
               <hr />
             </div>
           </div>
@@ -251,7 +290,7 @@
           <h1 class="sylla">
             Sylla<span class="text-red-600 void">Void</span>
           </h1>
-          <p class="detail">
+          <p class="detail text-justify">
             This Website is created and designed by team
             <b>"Hackerjacks"</b>. The main purpose of this website is to make it
             easy for the students to find the syllabus of different courses of
@@ -279,7 +318,7 @@
           </h3>
           <form action="">
             <i class="fa-solid fa-envelope"></i>
-            <input type="email" placeholder="Enter Your Email-id"/>
+            <input type="email" placeholder="Enter Your Email-id" />
             <button><i class="fa-solid fa-arrow-right"></i></button>
           </form>
           <div class="social">
@@ -288,7 +327,9 @@
             <i class="fa-brands fa-linkedin"></i>
             <i class="fa-brands fa-instagram"></i>
           </div>
-          <a href="feedback.html"><button class="feedback-btn">Feedback</button></a>
+          <a href="feedback.html"
+            ><button class="feedback-btn">Feedback</button></a
+          >
         </div>
       </div>
       <hr />
@@ -320,8 +361,8 @@
     </div>
     <div id="overlay"></div>
     <script>
-      const burger = document.querySelector('#burger');
-      const menu = document.querySelector('#menu');
+      const burger = document.querySelector("#burger");
+      const menu = document.querySelector("#menu");
       burger.addEventListener("click", () => {
         if (menu.classList.contains("hidden")) {
           menu.classList.remove("hidden");
@@ -378,7 +419,7 @@
         for (var i = 0; i < revealsSide.length; i++) {
           var windowHeight = window.innerHeight;
           var elementRight = revealsSide[i].getBoundingClientRect().top;
-          var elementVisible = 350;
+          var elementVisible = 0;
 
           if (elementRight < windowHeight - elementVisible) {
             revealsSide[i].classList.add("active");
@@ -396,7 +437,7 @@
         for (var i = 0; i < rerevealsSide.length; i++) {
           var windowHeight = window.innerHeight;
           var elementleft = rerevealsSide[i].getBoundingClientRect().top;
-          var elementVisible = -350;
+          var elementVisible = 0;
 
           if (elementleft < windowHeight - elementVisible) {
             rerevealsSide[i].classList.add("active");

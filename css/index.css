@@ -34,16 +34,13 @@ nav {
   font-weight: 800;
   grid-row: 1/ span2;
 }
+li {
+  align-self: center;
+}
 .signin_btn {
   font-size: 20px;
-  place-self: end;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
-}
-.signin_btn:hover {
-  background-color: red;
-  border-radius: 5px;
-  padding: 5px;
 }
 .main-nav {
   place-self: end;
@@ -185,6 +182,7 @@ nav {
   position: absolute;
   left: -100px;
   transform: rotate(10deg);
+  z-index: -1;
 }
 @keyframes animation {
   0% {
@@ -206,6 +204,12 @@ nav {
   display: flex;
   justify-content: center;
 }
+.search-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
 .search-input {
   border-radius: 4px;
   padding: 8px 20px;
@@ -215,9 +219,13 @@ nav {
   width: 550px;
   background-color: #f4f8f6;
   border-radius: 10px;
-/*   display: flex; */
+  display: flex;
   padding: 4px;
-/*   flex-direction: column; */
+  flex-direction: column;
+}
+.suggested :hover {
+  text-shadow: 4em;
+  font-size: 2em;
 }
 .motive-sec1 {
   /* background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)); */
@@ -257,15 +265,21 @@ nav {
   border: none;
 }
 .team {
+  color: #fff;
+  display: grid;
+  grid-template-rows: 100px repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  width: 90%;
+}
+.team-cont {
   background-image: linear-gradient(
     to top,
     rgba(14, 24, 95, 1),
     rgba(14, 24, 95, 0.5)
   );
-  color: #fff;
-  display: grid;
-  grid-template-rows: 100px repeat(4, 1fr);
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
 }
 .team-head {
   color: #fff;
@@ -277,22 +291,25 @@ nav {
 }
 .mem {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
   grid-template-columns: 0.5fr 1fr;
   grid-column-start: 1;
   grid-column-end: 3;
   height: 100%;
-  padding: 20px;
   position: relative;
   width: 50%;
 }
 .mem-1 {
+  border-right: solid;
   grid-row-start: 2;
   place-self: start;
 }
 .mem-2 {
+  border-left: solid;
   grid-row-start: 3;
+  grid-template-columns: 1fr 0.5fr;
   place-self: end;
+  width: 50.135%;
 }
 .mem-3 {
   grid-row-start: 4;
@@ -300,31 +317,84 @@ nav {
 .mem-4 {
   grid-row-start: 5;
 }
-.image-cont {
+.image-cont-left {
   align-self: center;
   border: solid red 2px;
   grid-row-start: 1;
   grid-row-end: 3;
   height: 200px;
   justify-self: end;
-  margin-right: 20px;
   width: 200px;
+}
+.image-cont-right {
+  align-self: center;
+  border: solid red 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 200px;
+  width: 200px;
+}
+.timeline-connection {
+  display: block;
+  margin: 0%;
+  width: 100%;
+}
+.timeline-connection2 {
+  border: dotted 30px;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  bottom: 20px;
+  left: 97%;
+  position: relative;
+  width: 30px;
+}
+.timeline-connection3 {
+  border: dotted 30px;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  bottom: 20px;
+  left: -3.5%;
+  position: relative;
+  width: 30px;
 }
 .pf-png {
-  position: absolute;
-  bottom: 60px;
-  left: 3.5%;
+  position: relative;
+  top: 15%;
+  left: -15%;
   width: 200px;
 }
+.pf-png2{
+  position: relative;
+  left: 15%;
+}
 .name {
-  margin: 80px 0 40px 0;
+  margin: 80px 0 40px 10px;
   font-size: 25px;
   font-weight: 600;
 }
+/* .name2 {
+  margin: 80px 0 40px 0;
+  font-size: 25px;
+  font-weight: 600;
+  justify-self: end;
+} */
 .team-text {
   font-size: 20px;
+  margin-left: 10px;
   text-align: justify;
+  align-self: center;
 }
+/* .team-text2 {
+  font-size: 20px;
+  margin-left: 10px;
+  text-align: justify;
+  justify-self: end;
+  align-self: center;
+} */
 footer {
   width: 100%;
   background-color: #485461;
@@ -551,18 +621,9 @@ footer .detail {
     background-size: cover;
     height: 80vh;
   }
-  .suggested {
-    margin-top: 25px;
-/*     width: 550px; */
-/*     transform: translate(80%, -50%); */
-    background-color: #f4f8f6;
-    border-radius: 10px;
-    box-shadow: coral;
-  }
-
-  .suggested :hover {
-    text-shadow: 4em;
-    font-size: 2em;
+  .suggestions {
+    position: relative;
+    margin: 0;
   }
   .mem {
     grid-template-rows: repeat(3, 1fr);
@@ -639,7 +700,6 @@ footer .detail {
   }
   .suggested {
     width: 250px;
-/*     transform: translate(40%, -20%); */
     background-color: #f4f8f6;
     border-radius: 10px;
     display: flex;
@@ -788,6 +848,12 @@ footer .detail {
 }
 
 /* Scroll effect */
+.timeline {
+  /* position: absolute; */
+  place-self: center;
+  width: 50%;
+  transform: rotate(90deg);
+}
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -811,7 +877,7 @@ footer .detail {
   transition: 1s all ease;
 }
 .rerevealSide.active {
-  transform: translateX(0);
+  transform: translateX(0px);
   opacity: 1;
 }
 .reveal.active {
@@ -835,7 +901,6 @@ footer .detail {
 .navbar:hover::after{
   width: 100%;
 }
-
 /* Scroll bar */
 ::-webkit-scrollbar {
   border-radius: 10px;
