@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.sylla {
+  margin: 0 0 0 20px;
+  font-size: 50px;
+  font-weight: 800;
+  grid-row: 1 / span2;
+  color: #fff;
+}
+.void {
+  color: red;
+}
+#home___ {
+  margin-bottom: 20px;
+}
+#home___ button {
+  cursor: pointer;
+  border-radius: 10px;
+  letter-spacing: 1.1;
+  padding: 10px;
+  color: white;
+  background-color: rgb(216, 52, 52);
+}
+#home___ button:hover {
+  background-color: rgb(236, 33, 33);
+}
+#pdfrender {
+  max-width: 750px;
+  max-height: 750px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.btn {
+  background-color: #fff;
+  font-size: 30px;
+  padding: 0 10px;
+  border-radius: 25%;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  color: white;
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: sans-serif;
+}
+footer .row {
+  width: 86%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .col {
+  flex-basis: 33%;
+  padding: 10px;
+}
+footer .col h3 {
+  color: white;
+  width: fit-content;
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -6px;
+  margin-bottom: 40px;
+}
+footer .colr:nth-child(2) {
+  flex-basis: 15%;
+}
+footer .email {
+  width: fit-content;
+  margin: 20px 0;
+}
+
+footer form {
+  position: relative;
+  display: flex;
+  padding-bottom: 13px;
+  align-items: center;
+  border-bottom: 1px solid rgb(218, 98, 98);
+  justify-content: space-between;
+  transition: border-bottom 0.3s ease-in-out;
+}
+footer form ::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  transition: width 0.4s ease-in-out;
+}
+footer form :hover::after {
+  width: 100%;
+}
+footer form .fa-envelope {
+  font-size: 17px;
+  margin-right: 10px;
+}
+footer form input {
+  width: 100%;
+  background: transparent;
+  color: white;
+  border: 0;
+  outline: none;
+}
+footer form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+footer form button .fa-arrow-right {
+  font-size: 15px;
+  color: white;
+}
+footer .social {
+  margin-top: 30px;
+}
+footer .social .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #485461;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.feedback-btn {
+  background-color: green;
+  border: solid green 1px;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0.8;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.feedback-btn:hover {
+  box-shadow: 0 0 5px white;
+}
+
+footer .detail {
+  max-width: 360px;
+  text-align: justify;
+}
+.underline {
+  width: 100%;
+  background: #485461;
+  height: 5px;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span {
+  width: 15px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background: white;
+  animation: moving 2s linear infinite;
+}
+.end {
+  text-align: center;
+  font-family: cursive;
+}
+.end i {
+  color: red;
+  font-size: 20px;
+}
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+  footer .social {
+    margin-top: 20px;
+  }
+  footer .social .fa-brands {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+  footer .colr:nth-child(2),
+  .colr:nth-child(3) {
+    flex-basis: 100%;
+  }
+  footer .col {
+    flex-basis: 100%;
+  }
+}
+/* Scroll bar */
+::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

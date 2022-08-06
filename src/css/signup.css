@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('https://img.freepik.com/free-psd/abstract-background-design_1297-82.jpg?w=2000');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up{
+    text-align: center;
+    margin: 100px auto ;
+    margin-bottom: 0px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 1px 5px 15px 0 #b8acae;
+    background: white;
+    display: none;
+    border-radius: 15px;
+}
+.sign-up h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #f8002f;
+}
+.input{
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 90%;
+    border: 1px solid #999 ;
+    outline: none;
+}
+.btn1{
+    display: inline-block;
+    background-color: #f8002f;
+    background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
+    border-radius: 5px;
+    box-shadow: 2px 10px 22px rgba(94,28,68,0.15);
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.check{
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+.icons{
+    cursor: pointer;
+}
+.icons i{
+    margin: 20px 10px 15px;
+    font-size: 25px;
+    transform: translateY(0px);
+    transition: transform 0.4s ease-in-out;
+}
+.fa-google{
+    color: red;
+}
+.fa-facebook{
+    color: blue;
+}.fa-linkedin{
+    color: #0077b5;
+}
+p{
+    color: rgb(105, 101, 101);
+}
+hr{
+    margin-left: 28px;
+    margin-top: 20px;
+    width: 80%;
+}
+.or{
+    background: white;
+    width:30px;
+    margin: -11px auto 10px;
+}
+input:checked{
+    color: blue;
+}
+.remem{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 13px;
+}
+.forgot{
+    font-size: 13px;
+    cursor: pointer;
+    color: grey;
+}
+.btn1:hover{
+    background: linear-gradient(326deg, #e63757 0%, #2d383f 74%);
+}
+.input:focus{
+    border: 2px solid red;
+}
+.icons i:hover{
+    transform: translateY(-5px);
+}
+.close{
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: right;
+}
+
