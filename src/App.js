@@ -9,7 +9,7 @@ import Footer from "./Components/Footer"
 import Particle from "./Components/Particle"
 import "./typewriter.js"
 import Sign_In from "./Components/Sign_In"
-// import "./search.js"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   function rerevealSide() {
@@ -81,16 +81,19 @@ export default function App() {
     <>
     {loading ? 
        <Preloader /> :
-      <>
-      <Particle />
-      <Navbar onClick = {handleChange} />
-      <Search />
-      <Motive />
-      <Team />
-      <Tools />
-      <Footer />
-      <Sign_In show = {show} onClick={handleChange} /> 
-      </>
+      <BrowserRouter>
+      
+        <Particle />
+            <Navbar onClick = {handleChange} />
+            <Routes>
+              <Route exact path="/" element={<Search />} />
+            </Routes>
+            <Motive />
+            <Team />
+            <Tools />
+            <Footer />
+            <Sign_In show = {show} onClick={handleChange} /> 
+      </BrowserRouter>
     }
     </>
   )
