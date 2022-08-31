@@ -2,12 +2,12 @@ import React from "react"
 export default function Footer() {
     return (
         <footer>
-            <div class="row">
-                <div class="col">
-                    <h1 class="sylla">
-                        Sylla<span class="text-red-600 void">Void</span>
+            <div className="row">
+                <div className="col">
+                    <h1 className="sylla">
+                        Sylla<span className="text-red-600 void">Void</span>
                     </h1>
-                    <p class="detail text-justify">
+                    <p className="detail text-justify">
                         This Website is created and designed by team
                         <b>"Hackerjacks"</b>. The main purpose of this website is to make it
                         easy for the students to find the syllabus of different courses of
@@ -17,10 +17,10 @@ export default function Footer() {
                         course according to their interest.
                     </p>
                 </div>
-                <div class="col">
+                <div className="col">
                     <h3>
                         Office
-                        <div class="underline"><span></span></div>
+                        <div className="underline"><span></span></div>
                     </h3>
                     <p>XYZ Road</p>
                     <p>ABCDE, Noida</p>
@@ -28,30 +28,30 @@ export default function Footer() {
                     <p class="email">xyz123@gmail.com</p>
                     <h4>+91 - 0123456789</h4>
                 </div>
-                <div class="col">
+                <div className="col">
                     <h3>
                         Contact
-                        <div class="underline"><span></span></div>
+                        <div className="underline"><span></span></div>
                     </h3>
                     <form action="">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i clasNameclassName="fa-solid fa-envelope"></i>
                         <input type="email" placeholder="Enter Your Email-id" />
-                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                        <button><i className="fa-solid fa-arrow-right"></i></button>
                     </form>
                     <div class="social">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <i className="fa-brands fa-facebook"></i>
+                        <i className="fa-brands fa-twitter"></i>
+                        <i className="fa-brands fa-linkedin"></i>
+                        <i className="fa-brands fa-instagram"></i>
                     </div>
                     <a href="feedback.html"
-                    ><button class="feedback-btn">Feedback</button></a
+                    ><button className="feedback-btn">Feedback</button></a
                     >
                 </div>
             </div>
             <hr />
-            <p class="end">
-                Made with <i class="fa-solid fa-heart"></i> by team HackerJacks.
+            <p className="end">
+                Made with <i clasNameclassName="fa-solid fa-heart"></i> by team HackerJacks.
             </p>
         </footer>
     )

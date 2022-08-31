@@ -1,13 +1,13 @@
 import React from "react"
 export default function Motive() {
     return (
-        <section class="motive-sec" id="motive">
-            <div class="motive-sec1">
-                <div class="motive">
-                    <h2 class="motive-head">Motive</h2>
-                    <p class="motive-text text-center mt-8 md:mt-16">
+        <section className="motive-sec" id="motive">
+            <div className="motive-sec1">
+                <div className="motive">
+                    <h2 className="motive-head">Motive</h2>
+                    <p className="motive-text text-center mt-8 md:mt-16">
                         Having complications in finding syllabus of colleges?<br /><br />
-                        <span class=""
+                        <span className=""
                         >Here's the solution...Get the syllabus of any college you want,we
                             are hereby providing you the syllabus of the different colleges
                             you might be searching for,just enter your college name and get

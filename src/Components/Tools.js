@@ -1,13 +1,13 @@
 import React from "react"
 export default function Tools() {
     return (
-        <div id="tools" class="tools">
+        <div id="tools" className="tools">
             <h2 id="tools-title">Tools Used</h2>
-            <section id="themes-section" class="section themes-section">
-                <label class="jadu slideanim">
+            <section id="themes-section" className="section themes-section">
+                <label className="jadu slideanim">
                     <input type="checkbox" />
-                    <div class="flip-card">
-                        <div class="front">
+                    <div className="flip-card">
+                        <div className="front">
                             <img
                                 src="https://img.icons8.com/color/120/000000/html-5--v1.png"
                             />
@@ -15,10 +15,10 @@ export default function Tools() {
                             <h2>For Structure</h2>
                             <p>Click for more info</p>
                         </div>
-                        <div class="back">
+                        <div className="back">
                             <h1>More Info</h1>
                             <hr />
-                            <p class="">
+                            <p className="">
                                 HTML stands for Hyper Text Markup Language. HTML is the standard
                                 markup language for creating Web pages.
                             </p>
@@ -26,16 +26,16 @@ export default function Tools() {
                         </div>
                     </div>
                 </label>
-                <label class="jadu slideanim">
+                <label className="jadu slideanim">
                     <input type="checkbox" />
-                    <div class="flip-card">
-                        <div class="front">
+                    <div className="flip-card">
+                        <div className="front">
                             <img src="https://img.icons8.com/color/120/000000/css3.png" />
                             <h1>CSS:3</h1>
                             <h2>For Styling</h2>
                             <p>Click for more info</p>
                         </div>
-                        <div class="back">
+                        <div className="back">
                             <h1>More Info</h1>
                             <hr />
                             <p>
@@ -46,10 +46,10 @@ export default function Tools() {
                         </div>
                     </div>
                 </label>
-                <label class="jadu slideanim">
+                <label className="jadu slideanim">
                     <input type="checkbox" />
-                    <div class="flip-card">
-                        <div class="front">
+                    <div className="flip-card">
+                        <div className="front">
                             <img
                                 src="https://img.icons8.com/color/120/000000/javascript--v1.png"
                             />
@@ -57,7 +57,7 @@ export default function Tools() {
                             <h2>For Functionality</h2>
                             <p>Click for more info</p>
                         </div>
-                        <div class="back">
+                        <div className="back">
                             <h1>More Info</h1>
                             <hr />
                             <p>
@@ -68,10 +68,10 @@ export default function Tools() {
                         </div>
                     </div>
                 </label>
-                <label class="jadu slideanim">
+                <label className="jadu slideanim">
                     <input type="checkbox" />
-                    <div class="flip-card">
-                        <div class="front">
+                    <div className="flip-card">
+                        <div className="front">
                             <img
                                 src="https://hight.io/_nuxt/img/tailwind.3558838.png"
                                 alt=""
@@ -80,7 +80,7 @@ export default function Tools() {
                             <h2>For CSS Framework</h2>
                             <p>Click for more info</p>
                         </div>
-                        <div class="back">
+                        <div className="back">
                             <h1>More Info</h1>
                             <hr />
                             <p>
