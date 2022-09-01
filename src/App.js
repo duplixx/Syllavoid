@@ -1,15 +1,8 @@
 import React from "react"
-import Navbar from "./Components/Navbar"
-import Preloader from "./Components/Preloader"
-import Search from "./Components/Search"
-import Motive from "./Components/Motive"
-import Team from "./Components/Team"
-import Tools from "./Components/Tools"
-import Footer from "./Components/Footer"
-import Particle from "./Components/Particle"
-import "./typewriter.js"
-import Sign_In from "./Components/Sign_In"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Preloader from "./Components/Preloader";
+import HomePage from "./pages/home";
+import PdfViewer from "./Components/college/pdfviewer";
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
 export default function App() {
   function rerevealSide() {
@@ -59,7 +52,7 @@ export default function App() {
       }
     }
   }
-  const [show, setShow] = React.useState(false)
+  
   window.addEventListener("scroll", reveal);
   const [loading, setLoading] = React.useState(false)
   React.useEffect(()=>{
@@ -68,31 +61,16 @@ export default function App() {
       setLoading(false)
     }, 2000);
   },[])
-  const handleChange = (e) =>{
-    if(show===false){
-      setShow(true)
-    }
-    else{
-      setShow(false)
-    }
-      
-  }
+  
   return (
     <>
     {loading ? 
        <Preloader /> :
       <BrowserRouter>
-      
-        <Particle />
-            <Navbar onClick = {handleChange} />
-            <Routes>
-              <Route exact path="/" element={<Search />} />
-            </Routes>
-            <Motive />
-            <Team />
-            <Tools />
-            <Footer />
-            <Sign_In show = {show} onClick={handleChange} /> 
+        <Routes>
+              <Route index path="/" element={<HomePage />} />
+              <Route exact path="/pdfviewer" element={<PdfViewer />} />
+        </Routes>
       </BrowserRouter>
     }
     </>

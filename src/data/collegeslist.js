@@ -1,7 +1,7 @@
 const data = [
     {
-      id: "gu",
-      Path: "../Components/college/gu",
+      id: "1",
+      Path: "",
       name: "Jane Doe",
       email: "janedoe@gmail.com",
       address: "New Delhi, India",

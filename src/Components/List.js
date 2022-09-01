@@ -1,13 +1,14 @@
 import React  from 'react'
-import {useNavigate,BrowserRouter as Router,Link,useLocation,useQuery} from 'react-router-dom';
+import {useNavigate,} from 'react-router-dom';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import data from '../data/collegeslist'
+import PdfViewer from './college/pdfviewer';
 
 
 export default function List(props) {
-    const navigate = useNavigate();  
-    const { search } = useLocation(); 
-    let query = useQuery();
+    const navigate = useNavigate();   
     const filteredData = data.filter((el) => {
         
         
@@ -20,14 +21,13 @@ export default function List(props) {
         }
     })
   return (
-    <div>
-         <ul>
-            {filteredData.map((item) => (
-                <li key={item.id}
-                onClick={() => navigate(`/${item.id}`)}
-                >{item.name}</li>
-            ))}
-        </ul>
-    </div>
+            <div>
+                 <ul>
+                    {filteredData.map((item) => (
+                        <Link to="./pdfviewer" props={item.id}><li key={item.id}
+                        >{item.name}</li></Link>
+                    ))}
+                </ul>
+            </div>
   )
 }
