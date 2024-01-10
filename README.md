@@ -1,3 +1,7 @@
+![image](https://github.com/duplixx/Syllavoid/assets/90516956/adcf5437-bd45-4744-a923-3bc534b24475)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
